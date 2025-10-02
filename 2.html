@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Contents - HighCrypto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1c3b;
+            color: white;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .slide-wrapper {
+            width: 100%;
+            max-width: 1280px;
+            aspect-ratio: 16 / 9;
+            position: relative;
+        }
+        
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            padding: 5% 6%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: clamp(30px, 4vw, 50px);
+        }
+        
+        h1 {
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: bold;
+            color: white;
+            margin-bottom: clamp(8px, 1vw, 12px);
+        }
+        
+        .header-line {
+            width: clamp(120px, 15vw, 180px);
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+            margin: 0 auto;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: clamp(15px, 2vw, 25px);
+            flex: 1;
+        }
+        
+        .toc-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #FFD700;
+            border-radius: 12px;
+            padding: clamp(15px, 2vw, 25px);
+            display: flex;
+            align-items: center;
+            gap: clamp(12px, 1.5vw, 20px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .toc-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.2);
+        }
+        
+        .toc-number {
+            width: clamp(35px, 4vw, 50px);
+            height: clamp(35px, 4vw, 50px);
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: clamp(16px, 2vw, 24px);
+            font-weight: bold;
+            color: #1a1c3b;
+            flex-shrink: 0;
+        }
+        
+        .toc-text {
+            flex: 1;
+        }
+        
+        .toc-title {
+            font-size: clamp(14px, 1.6vw, 20px);
+            font-weight: 600;
+            color: white;
+            margin-bottom: clamp(3px, 0.5vw, 6px);
+        }
+        
+        .toc-subtitle {
+            font-size: clamp(11px, 1.2vw, 15px);
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.4;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: clamp(20px, 3vw, 35px);
+            padding-top: clamp(15px, 2vw, 25px);
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        
+        .footer-text {
+            font-size: clamp(12px, 1.3vw, 16px);
+            color: rgba(255, 215, 0, 0.8);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-wrapper">
+        <div class="slide-container">
+            <div class="header">
+                <h1>Table of Contents</h1>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="content-grid">
+                <div class="toc-item">
+                    <div class="toc-number">1</div>
+                    <div class="toc-text">
+                        <div class="toc-title">Proposal Overview</div>
+                        <div class="toc-subtitle">Introduction to HighCrypto</div>
+                    </div>
+                </div>
+                
+                <div class="toc-item">
+                    <div class="toc-number">2</div>
+                    <div class="toc-text">
+                        <div class="toc-title">The Importance of the Korean Market</div>
+                        <div class="toc-subtitle">World's #2 crypto market</div>
+                    </div>
+                </div>
+                
+                <div class="toc-item">
+                    <div class="toc-number">3</div>
+                    <div class="toc-text">
+                        <div class="toc-title">Korean Communities & Strategies</div>
+                        <div class="toc-subtitle">Power of communities</div>
+                    </div>
+                </div>
+                
+                <div class="toc-item">
+                    <div class="toc-number">4</div>
+                    <div class="toc-text">
+                        <div class="toc-title">Naver-Upbit Ecosystem</div>
+                        <div class="toc-subtitle">Strategic partnership opportunities</div>
+                    </div>
+                </div>
+                
+                <div class="toc-item">
+                    <div class="toc-number">5</div>
+                    <div class="toc-text">
+                        <div class="toc-title">Reward App Marketing</div>
+                        <div class="toc-subtitle">Innovative user acquisition</div>
+                    </div>
+                </div>
+                
+                <div class="toc-item">
+                    <div class="toc-number">6</div>
+                    <div class="toc-text">
+                        <div class="toc-title">Core Marketing Services</div>
+                        <div class="toc-subtitle">Comprehensive solutions</div>
+                    </div>
+                </div>
+                
+                <div class="toc-item">
+                    <div class="toc-number">7</div>
+                    <div class="toc-text">
+                        <div class="toc-title">Customized Service Packages</div>
+                        <div class="toc-subtitle">Flexible pricing & options</div>
+                    </div>
+                </div>
+                
+                <div class="toc-item">
+                    <div class="toc-number">8</div>
+                    <div class="toc-text">
+                        <div class="toc-title">Expected Results & Conclusion</div>
+                        <div class="toc-subtitle">Success metrics</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="footer-text">Comprehensive Korean Market Entry Strategy</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

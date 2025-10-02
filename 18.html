@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrated Solutions - HighCrypto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1c3b;
+            color: white;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .slide-wrapper {
+            width: 100%;
+            max-width: 1280px;
+            aspect-ratio: 16 / 9;
+            position: relative;
+        }
+        
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            padding: 4% 6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: clamp(20px, 2.8vw, 35px);
+        }
+        
+        h1 {
+            font-size: clamp(30px, 3.8vw, 46px);
+            font-weight: bold;
+            color: white;
+            margin-bottom: clamp(8px, 1vw, 12px);
+        }
+        
+        .subtitle {
+            font-size: clamp(14px, 1.6vw, 20px);
+            color: rgba(255, 215, 0, 0.8);
+            margin-bottom: clamp(8px, 1vw, 12px);
+        }
+        
+        .header-line {
+            width: clamp(180px, 21vw, 250px);
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+            margin: 0 auto;
+        }
+        
+        .solutions-grid {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(15px, 2vw, 25px);
+        }
+        
+        .solution-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: clamp(15px, 2vw, 25px);
+            border-left: 5px solid #FFD700;
+            transition: all 0.3s ease;
+        }
+        
+        .solution-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateX(5px);
+        }
+        
+        .solution-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: clamp(10px, 1.3vw, 16px);
+        }
+        
+        .solution-name {
+            font-size: clamp(18px, 2.2vw, 28px);
+            font-weight: 600;
+            color: #FFD700;
+        }
+        
+        .solution-price {
+            font-size: clamp(16px, 1.9vw, 24px);
+            font-weight: 600;
+            color: white;
+        }
+        
+        .solution-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: clamp(15px, 2vw, 25px);
+        }
+        
+        .configuration {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(6px, 0.8vw, 10px);
+        }
+        
+        .config-item {
+            font-size: clamp(12px, 1.4vw, 17px);
+            color: rgba(255, 255, 255, 0.8);
+            padding-left: clamp(15px, 1.8vw, 22px);
+            position: relative;
+            line-height: 1.5;
+        }
+        
+        .config-item:before {
+            content: "✓";
+            color: #FFD700;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .target-box {
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 8px;
+            padding: clamp(10px, 1.4vw, 17px);
+        }
+        
+        .target-label {
+            font-size: clamp(12px, 1.4vw, 17px);
+            font-weight: 600;
+            color: #FFD700;
+            margin-bottom: clamp(5px, 0.7vw, 8px);
+        }
+        
+        .target-text {
+            font-size: clamp(11px, 1.3vw, 16px);
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.5;
+        }
+        
+        .bottom-note {
+            text-align: center;
+            margin-top: clamp(15px, 2vw, 25px);
+            padding: clamp(12px, 1.7vw, 20px);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            border-radius: 10px;
+        }
+        
+        .bottom-text {
+            font-size: clamp(13px, 1.5vw, 18px);
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            color: #FFD700;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-wrapper">
+        <div class="slide-container">
+            <div class="header">
+                <h1>Integrated Solutions</h1>
+                <div class="subtitle">Comprehensive packages maximizing synergy of multiple services</div>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-name">Standard Solution</div>
+                        <div class="solution-price">$30K-50K (3 months)</div>
+                    </div>
+                    <div class="solution-content">
+                        <div class="configuration">
+                            <div class="config-item">KOL Basic OR Standard</div>
+                            <div class="config-item">Naver Basic OR Professional</div>
+                            <div class="config-item">Community Starter OR Growth</div>
+                            <div class="config-item">Media Essential (optional)</div>
+                        </div>
+                        <div class="target-box">
+                            <div class="target-label">Target:</div>
+                            <div class="target-text">Establish basic Korean market position, initial community formation stage</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-name">Premium Solution</div>
+                        <div class="solution-price">$70K-100K (3-6 months)</div>
+                    </div>
+                    <div class="solution-content">
+                        <div class="configuration">
+                            <div class="config-item">KOL Standard OR Premium</div>
+                            <div class="config-item">Naver Professional OR Enterprise</div>
+                            <div class="config-item">Community Growth OR Dominance</div>
+                            <div class="config-item">Media Impact</div>
+                            <div class="config-item">Reward App or Ad Network (optional)</div>
+                        </div>
+                        <div class="target-box">
+                            <div class="target-label">Target:</div>
+                            <div class="target-text">Korean exchange listing preparation within 6 months goal</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-name">Enterprise Solution</div>
+                        <div class="solution-price">$150K+ (6 months)</div>
+                    </div>
+                    <div class="solution-content">
+                        <div class="configuration">
+                            <div class="config-item">All core services at highest tier</div>
+                            <div class="config-item">Multiple specialized service combinations</div>
+                            <div class="config-item">Dedicated Korean marketing team assigned</div>
+                            <div class="config-item">Korean exchange listing strategy consultation included</div>
+                            <div class="config-item">Weekly strategy meetings and detailed reports</div>
+                        </div>
+                        <div class="target-box">
+                            <div class="target-label">Target:</div>
+                            <div class="target-text">Complete Korean market domination, major exchange listing confirmed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bottom-note">
+                <div class="bottom-text">
+                    <span class="highlight">Flexible Custom Configuration:</span> All services can be freely combined based on your project's specific situation, goals, and budget
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

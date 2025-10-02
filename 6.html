@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver-Upbit Ecosystem - HighCrypto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1c3b;
+            color: white;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .slide-wrapper {
+            width: 100%;
+            max-width: 1280px;
+            aspect-ratio: 16 / 9;
+            position: relative;
+        }
+        
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            padding: 4% 6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: clamp(20px, 2.8vw, 35px);
+        }
+        
+        h1 {
+            font-size: clamp(30px, 3.8vw, 46px);
+            font-weight: bold;
+            color: white;
+            margin-bottom: clamp(8px, 1vw, 12px);
+        }
+        
+        .header-line {
+            width: clamp(200px, 23vw, 280px);
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+            margin: 0 auto;
+        }
+        
+        .partnership-box {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            border-radius: 15px;
+            padding: clamp(15px, 2vw, 25px);
+            margin-bottom: clamp(18px, 2.3vw, 28px);
+            text-align: center;
+        }
+        
+        .partnership-title {
+            font-size: clamp(17px, 2.1vw, 26px);
+            color: #FFD700;
+            font-weight: 600;
+            margin-bottom: clamp(8px, 1vw, 12px);
+        }
+        
+        .partnership-text {
+            font-size: clamp(12px, 1.4vw, 17px);
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.6;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: clamp(15px, 2vw, 25px);
+            margin-bottom: clamp(15px, 2vw, 25px);
+        }
+        
+        .naver-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: clamp(15px, 2vw, 25px);
+            border-left: 4px solid #03C75A;
+        }
+        
+        .section-title {
+            font-size: clamp(16px, 1.9vw, 24px);
+            font-weight: 600;
+            color: #FFD700;
+            margin-bottom: clamp(10px, 1.3vw, 16px);
+        }
+        
+        .naver-logo {
+            color: #03C75A;
+            font-weight: bold;
+        }
+        
+        .stat-item {
+            margin-bottom: clamp(8px, 1.1vw, 14px);
+        }
+        
+        .stat-label {
+            font-size: clamp(12px, 1.4vw, 17px);
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: clamp(3px, 0.5vw, 6px);
+        }
+        
+        .stat-value {
+            font-size: clamp(13px, 1.5vw, 19px);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .opportunities-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: clamp(15px, 2vw, 25px);
+            border-left: 4px solid #FFD700;
+        }
+        
+        .opportunity-item {
+            margin-bottom: clamp(10px, 1.3vw, 16px);
+            padding-left: clamp(12px, 1.5vw, 18px);
+            border-left: 2px solid rgba(255, 215, 0, 0.3);
+        }
+        
+        .opportunity-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .opportunity-title {
+            font-size: clamp(13px, 1.5vw, 18px);
+            color: #FFD700;
+            font-weight: 600;
+            margin-bottom: clamp(4px, 0.6vw, 7px);
+        }
+        
+        .opportunity-desc {
+            font-size: clamp(11px, 1.3vw, 16px);
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.5;
+        }
+        
+        .bottom-highlight {
+            text-align: center;
+            padding: clamp(12px, 1.7vw, 20px);
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 10px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+        
+        .bottom-highlight p {
+            font-size: clamp(13px, 1.5vw, 18px);
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            color: #FFD700;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-wrapper">
+        <div class="slide-container">
+            <div class="header">
+                <h1>Marketing Opportunities in the Naver-Upbit Ecosystem</h1>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="partnership-box">
+                <div class="partnership-title">Strategic Partnership (September 2025)</div>
+                <div class="partnership-text">
+                    Naver-Upbit partnership is bringing major changes: user experience integration, search-to-investment pathways, and content-trading linkage. Naver search ranking is now a key factor determining project investor inflow.
+                </div>
+            </div>
+            
+            <div class="content-grid">
+                <div class="naver-section">
+                    <div class="section-title"><span class="naver-logo">NAVER</span> Dominance</div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-label">Monthly Visitors</div>
+                        <div class="stat-value">1.635 Billion</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-label">Search Market Share</div>
+                        <div class="stat-value">65%+</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-label">Daily Active Users</div>
+                        <div class="stat-value">30+ Million</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-label">Role</div>
+                        <div class="stat-value">Investment Decision Center</div>
+                    </div>
+                </div>
+                
+                <div class="opportunities-section">
+                    <div class="section-title">Key Optimization Areas</div>
+                    
+                    <div class="opportunity-item">
+                        <div class="opportunity-title">Keyword Optimization</div>
+                        <div class="opportunity-desc">First page ranking for project keywords drives investment inflow</div>
+                    </div>
+                    
+                    <div class="opportunity-item">
+                        <div class="opportunity-title">Content Ecosystem</div>
+                        <div class="opportunity-desc">Integrated strategy across blogs, cafes, knowledge, and news</div>
+                    </div>
+                    
+                    <div class="opportunity-item">
+                        <div class="opportunity-title">Trust Building</div>
+                        <div class="opportunity-desc">Official blog and knowledge Q&A for authoritative presence</div>
+                    </div>
+                    
+                    <div class="opportunity-item">
+                        <div class="opportunity-title">Influencer Collaboration</div>
+                        <div class="opportunity-desc">Partnership with Naver-certified professional bloggers</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bottom-highlight">
+                <p>HighCrypto's <span class="highlight">deep understanding of Naver-Upbit ecosystem</span> helps your project achieve optimal positioning within this powerful platform</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

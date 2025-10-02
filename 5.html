@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Communities & Strategic Approaches - HighCrypto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1c3b;
+            color: white;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .slide-wrapper {
+            width: 100%;
+            max-width: 1280px;
+            aspect-ratio: 16 / 9;
+            position: relative;
+        }
+        
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            padding: 4% 6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: clamp(18px, 2.5vw, 30px);
+        }
+        
+        h1 {
+            font-size: clamp(28px, 3.5vw, 44px);
+            font-weight: bold;
+            color: white;
+            margin-bottom: clamp(8px, 1vw, 12px);
+        }
+        
+        .header-line {
+            width: clamp(220px, 25vw, 300px);
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+            margin: 0 auto;
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 69, 69, 0.15), rgba(255, 69, 69, 0.05));
+            border: 2px solid rgba(255, 69, 69, 0.4);
+            border-left: 5px solid #ff4545;
+            border-radius: 12px;
+            padding: clamp(12px, 1.7vw, 20px);
+            margin-bottom: clamp(18px, 2.3vw, 28px);
+        }
+        
+        .warning-title {
+            font-size: clamp(16px, 1.9vw, 24px);
+            font-weight: 600;
+            color: #ff6b6b;
+            margin-bottom: clamp(6px, 0.8vw, 10px);
+        }
+        
+        .warning-text {
+            font-size: clamp(12px, 1.4vw, 17px);
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.5;
+            margin-bottom: clamp(8px, 1vw, 12px);
+        }
+        
+        .quote-box {
+            padding-top: clamp(8px, 1vw, 12px);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .quote-text {
+            font-size: clamp(11px, 1.3vw, 15px);
+            color: rgba(255, 255, 255, 0.7);
+            font-style: italic;
+            line-height: 1.5;
+        }
+        
+        .quote-link {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .quote-link:hover {
+            color: #FFA500;
+            text-decoration: underline;
+        }
+        
+        .communities-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: clamp(12px, 1.7vw, 20px);
+            margin-bottom: clamp(15px, 2vw, 25px);
+        }
+        
+        .community-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #FFD700;
+            border-radius: 10px;
+            padding: clamp(12px, 1.6vw, 20px);
+            transition: all 0.3s ease;
+        }
+        
+        .community-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateX(3px);
+        }
+        
+        .community-name {
+            font-size: clamp(15px, 1.8vw, 22px);
+            font-weight: 600;
+            color: #FFD700;
+            margin-bottom: clamp(5px, 0.7vw, 8px);
+        }
+        
+        .community-stat {
+            font-size: clamp(11px, 1.3vw, 16px);
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.4;
+        }
+        
+        .solution-box {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            border-radius: 12px;
+            padding: clamp(15px, 2vw, 25px);
+        }
+        
+        .solution-title {
+            font-size: clamp(16px, 1.9vw, 24px);
+            font-weight: 600;
+            color: #FFD700;
+            margin-bottom: clamp(8px, 1.1vw, 14px);
+            text-align: center;
+        }
+        
+        .solution-text {
+            font-size: clamp(12px, 1.4vw, 17px);
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .highlight {
+            color: #FFD700;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-wrapper">
+        <div class="slide-container">
+            <div class="header">
+                <h1>Korean Communities & Strategic Approaches</h1>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="warning-box">
+                <div class="warning-title">WARNING: KOL Marketing Alone Is Not Enough</div>
+                <div class="warning-text">
+                    Telegram posts average 1-2K views, YouTube videos 2-3K views. <strong>99% of Korean investors are NOT on those channels.</strong> Most projects overspend on KOLs while missing the majority of Korean investors.
+                </div>
+                <div class="quote-box">
+                    <div class="quote-text">
+                        "Most international projects trying to enter Korean market overspend on TG and YT KOLs, but 99% of Korean investors are not even on those channels." 
+                        <a href="https://x.com/ekrahm/status/1972496815548432480" target="_blank" class="quote-link">- Erik Rahm (Celestia)</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="communities-grid">
+                <div class="community-card">
+                    <div class="community-name">DCInside</div>
+                    <div class="community-stat">3M+ daily visitors, 227M monthly - Korea's largest community</div>
+                </div>
+                
+                <div class="community-card">
+                    <div class="community-name">Coinpan</div>
+                    <div class="community-stat">5.2M+ monthly visitors - Crypto-specialized platform</div>
+                </div>
+                
+                <div class="community-card">
+                    <div class="community-name">Coinness</div>
+                    <div class="community-stat">1.26M+ monthly visitors - Investor-focused</div>
+                </div>
+                
+                <div class="community-card">
+                    <div class="community-name">Naver Cafes</div>
+                    <div class="community-stat">300K-1M active members per major crypto cafe</div>
+                </div>
+            </div>
+            
+            <div class="solution-box">
+                <div class="solution-title">HighCrypto's Comprehensive Approach</div>
+                <div class="solution-text">
+                    While we have <span class="highlight">300+ KOL network</span>, we know this alone isn't sufficient. We provide a comprehensive approach exposing your project to the much broader Korean investor ecosystem through <span class="highlight">community viral marketing, Naver optimization, and reward app campaigns</span>.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

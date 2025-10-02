@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialized Services - HighCrypto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1c3b;
+            color: white;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .slide-wrapper {
+            width: 100%;
+            max-width: 1280px;
+            aspect-ratio: 16 / 9;
+            position: relative;
+        }
+        
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            padding: 4% 6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: clamp(18px, 2.5vw, 30px);
+        }
+        
+        h1 {
+            font-size: clamp(30px, 3.8vw, 46px);
+            font-weight: bold;
+            color: white;
+            margin-bottom: clamp(8px, 1vw, 12px);
+        }
+        
+        .header-line {
+            width: clamp(180px, 21vw, 250px);
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+            margin: 0 auto;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: clamp(15px, 2vw, 25px);
+        }
+        
+        .service-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: clamp(15px, 2vw, 25px);
+            border-top: 4px solid #FFD700;
+        }
+        
+        .section-title {
+            font-size: clamp(18px, 2.2vw, 28px);
+            font-weight: 600;
+            color: #FFD700;
+            margin-bottom: clamp(12px, 1.6vw, 20px);
+            text-align: center;
+        }
+        
+        .package-tiers {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(10px, 1.3vw, 16px);
+        }
+        
+        .tier-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid #FFD700;
+            border-radius: 8px;
+            padding: clamp(10px, 1.4vw, 17px);
+        }
+        
+        .tier-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: clamp(6px, 0.8vw, 10px);
+        }
+        
+        .tier-name {
+            font-size: clamp(14px, 1.7vw, 20px);
+            font-weight: 600;
+            color: #FFD700;
+        }
+        
+        .tier-price {
+            font-size: clamp(13px, 1.5vw, 18px);
+            font-weight: 600;
+            color: white;
+        }
+        
+        .tier-features {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(4px, 0.6vw, 7px);
+        }
+        
+        .feature {
+            font-size: clamp(11px, 1.3vw, 16px);
+            color: rgba(255, 255, 255, 0.75);
+            padding-left: clamp(12px, 1.5vw, 18px);
+            position: relative;
+            line-height: 1.4;
+        }
+        
+        .feature:before {
+            content: "•";
+            color: #FFD700;
+            position: absolute;
+            left: 0;
+        }
+        
+        .reward-section {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(10px, 1.3vw, 16px);
+        }
+        
+        .scale-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid #FFD700;
+            border-radius: 8px;
+            padding: clamp(10px, 1.4vw, 17px);
+        }
+        
+        .scale-title {
+            font-size: clamp(14px, 1.7vw, 20px);
+            font-weight: 600;
+            color: #FFD700;
+            margin-bottom: clamp(6px, 0.8vw, 10px);
+        }
+        
+        .scale-desc {
+            font-size: clamp(11px, 1.3vw, 16px);
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.5;
+        }
+        
+        .usage-box {
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 8px;
+            padding: clamp(10px, 1.4vw, 17px);
+        }
+        
+        .usage-title {
+            font-size: clamp(13px, 1.5vw, 18px);
+            font-weight: 600;
+            color: #FFD700;
+            margin-bottom: clamp(6px, 0.8vw, 10px);
+        }
+        
+        .usage-list {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(4px, 0.6vw, 7px);
+        }
+        
+        .usage-item {
+            font-size: clamp(11px, 1.3vw, 16px);
+            color: rgba(255, 255, 255, 0.8);
+            padding-left: clamp(12px, 1.5vw, 18px);
+            position: relative;
+            line-height: 1.4;
+        }
+        
+        .usage-item:before {
+            content: "✓";
+            color: #FFD700;
+            position: absolute;
+            left: 0;
+        }
+        
+        .note-box {
+            margin-top: clamp(10px, 1.4vw, 17px);
+            padding: clamp(8px, 1.1vw, 14px);
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 6px;
+            font-size: clamp(10px, 1.2vw, 15px);
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.5;
+            text-align: center;
+        }
+        
+        .highlight {
+            color: #FFD700;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-wrapper">
+        <div class="slide-container">
+            <div class="header">
+                <h1>Specialized Services</h1>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="content-grid">
+                <div class="service-section">
+                    <div class="section-title">Advertising Network Package</div>
+                    
+                    <div class="package-tiers">
+                        <div class="tier-card">
+                            <div class="tier-header">
+                                <div class="tier-name">Light Package</div>
+                                <div class="tier-price">$5K-10K</div>
+                            </div>
+                            <div class="tier-features">
+                                <div class="feature">1-2 Naver Cafes OR Coinpan banner</div>
+                                <div class="feature">1 month operation</div>
+                                <div class="feature">Expected exposure: 1-3M PV</div>
+                            </div>
+                        </div>
+                        
+                        <div class="tier-card">
+                            <div class="tier-header">
+                                <div class="tier-name">Standard Package</div>
+                                <div class="tier-price">$15K-30K</div>
+                            </div>
+                            <div class="tier-features">
+                                <div class="feature">2-3 Naver Cafes + Coinpan banner</div>
+                                <div class="feature">1-2 crypto media outlets</div>
+                                <div class="feature">1 month operation</div>
+                                <div class="feature">Expected exposure: 5-10M PV</div>
+                            </div>
+                        </div>
+                        
+                        <div class="tier-card">
+                            <div class="tier-header">
+                                <div class="tier-name">Premium Package</div>
+                                <div class="tier-price">$40K-80K+</div>
+                            </div>
+                            <div class="tier-features">
+                                <div class="feature">All major Naver Cafes + Coinpan</div>
+                                <div class="feature">3+ crypto media outlets</div>
+                                <div class="feature">1-2 months operation</div>
+                                <div class="feature">Expected exposure: 15M+ PV</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="note-box">
+                        <span class="highlight">Included:</span> Banner creative design, platform optimization, real-time monitoring, performance reports
+                    </div>
+                </div>
+                
+                <div class="service-section">
+                    <div class="section-title">Reward App Campaigns</div>
+                    
+                    <div class="reward-section">
+                        <div class="scale-box">
+                            <div class="scale-title">Campaign Scale</div>
+                            <div class="scale-desc">
+                                Starter: $5K-10K | Growth: $15K-30K | Large-scale: $50K+
+                            </div>
+                        </div>
+                        
+                        <div class="usage-box">
+                            <div class="usage-title">Recommended Usage Scenarios</div>
+                            <div class="usage-list">
+                                <div class="usage-item">Official Telegram/Discord member expansion</div>
+                                <div class="usage-item">X (Twitter) follower massive growth</div>
+                                <div class="usage-item">Real-life blockchain service user acquisition</div>
+                                <div class="usage-item">New segment inflow beyond existing crypto investors</div>
+                            </div>
+                        </div>
+                        
+                        <div class="scale-box">
+                            <div class="scale-title">Features</div>
+                            <div class="tier-features">
+                                <div class="feature">Access 30M+ active users across 1,000+ apps</div>
+                                <div class="feature">Drive actual participation through action-based rewards</div>
+                                <div class="feature">Project-customized campaign design</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="note-box">
+                        <span class="highlight">Strategic Value:</span> Pioneer untapped user base unreachable through traditional KOL channels
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targeted Advertising & Events - HighCrypto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1c3b;
+            color: white;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .slide-wrapper {
+            width: 100%;
+            max-width: 1280px;
+            aspect-ratio: 16 / 9;
+            position: relative;
+        }
+        
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            padding: 4% 6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: clamp(18px, 2.5vw, 30px);
+        }
+        
+        h1 {
+            font-size: clamp(28px, 3.5vw, 44px);
+            font-weight: bold;
+            color: white;
+            margin-bottom: clamp(8px, 1vw, 12px);
+        }
+        
+        .header-line {
+            width: clamp(240px, 27vw, 320px);
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+            margin: 0 auto;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: clamp(15px, 2vw, 25px);
+        }
+        
+        .service-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: clamp(15px, 2vw, 25px);
+            border-top: 4px solid #FFD700;
+        }
+        
+        .section-title {
+            font-size: clamp(18px, 2.2vw, 28px);
+            font-weight: 600;
+            color: #FFD700;
+            margin-bottom: clamp(12px, 1.5vw, 18px);
+            text-align: center;
+        }
+        
+        .ad-channels {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(10px, 1.3vw, 16px);
+        }
+        
+        .ad-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid #FFD700;
+            border-radius: 8px;
+            padding: clamp(10px, 1.3vw, 16px);
+        }
+        
+        .ad-title {
+            font-size: clamp(13px, 1.5vw, 18px);
+            font-weight: 600;
+            color: #FFD700;
+            margin-bottom: clamp(4px, 0.6vw, 7px);
+        }
+        
+        .ad-desc {
+            font-size: clamp(11px, 1.3vw, 16px);
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.5;
+        }
+        
+        .events-list {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(10px, 1.3vw, 16px);
+        }
+        
+        .event-category {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid #FFD700;
+            border-radius: 8px;
+            padding: clamp(10px, 1.3vw, 16px);
+        }
+        
+        .category-title {
+            font-size: clamp(14px, 1.6vw, 20px);
+            font-weight: 600;
+            color: #FFD700;
+            margin-bottom: clamp(6px, 0.8vw, 10px);
+        }
+        
+        .event-items {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(4px, 0.6vw, 7px);
+        }
+        
+        .event-item {
+            font-size: clamp(11px, 1.3vw, 16px);
+            color: rgba(255, 255, 255, 0.75);
+            padding-left: clamp(12px, 1.5vw, 18px);
+            position: relative;
+            line-height: 1.4;
+        }
+        
+        .event-item:before {
+            content: "•";
+            color: #FFD700;
+            position: absolute;
+            left: 0;
+        }
+        
+        .note-box {
+            margin-top: clamp(10px, 1.4vw, 17px);
+            padding: clamp(10px, 1.4vw, 17px);
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        .note-text {
+            font-size: clamp(11px, 1.3vw, 16px);
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.5;
+            text-align: center;
+        }
+        
+        .highlight {
+            color: #FFD700;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-wrapper">
+        <div class="slide-container">
+            <div class="header">
+                <h1>Targeted Advertising & Events</h1>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="content-grid">
+                <div class="service-section">
+                    <div class="section-title">Targeted Advertising Network</div>
+                    
+                    <div class="ad-channels">
+                        <div class="ad-item">
+                            <div class="ad-title">Premium Naver Cafe Banners</div>
+                            <div class="ad-desc">Target cafes with 300K-1M members, premium positions in crypto-specialized cafes</div>
+                        </div>
+                        
+                        <div class="ad-item">
+                            <div class="ad-title">Major Community Site Ads</div>
+                            <div class="ad-desc">Coinpan banners in coin/investment sections with optimized messaging</div>
+                        </div>
+                        
+                        <div class="ad-item">
+                            <div class="ad-title">Financial App Live Ads</div>
+                            <div class="ad-desc">Strategic exposure within major financial apps at real-time check points</div>
+                        </div>
+                        
+                        <div class="ad-item">
+                            <div class="ad-title">Crypto Media Banners</div>
+                            <div class="ad-desc">Coinness, TokenPost with integrated content marketing</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-section">
+                    <div class="section-title">Events & Community Activation</div>
+                    
+                    <div class="events-list">
+                        <div class="event-category">
+                            <div class="category-title">Online AMA Sessions</div>
+                            <div class="event-items">
+                                <div class="event-item">YouTube Live, Telegram, X Spaces</div>
+                                <div class="event-item">Crypto media collaboration AMA</div>
+                                <div class="event-item">Professional Korean interpretation support</div>
+                            </div>
+                        </div>
+                        
+                        <div class="event-category">
+                            <div class="category-title">Offline Meetups & Conferences</div>
+                            <div class="event-items">
+                                <div class="event-item">Developer meetings and technical seminars</div>
+                                <div class="event-item">Investor networking events</div>
+                                <div class="event-item">Venue selection, participant recruitment</div>
+                                <div class="event-item">Local influencer and media invitations</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="note-box">
+                        <div class="note-text">
+                            HighCrypto conducts events from <span class="highlight">small meetups to large conferences</span> at reasonable costs using our own network
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Proposal - HighCrypto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1c3b;
+            color: white;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .slide-wrapper {
+            width: 100%;
+            max-width: 1280px;
+            aspect-ratio: 16 / 9;
+            position: relative;
+            background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+        }
+        
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            padding: 5% 6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* 배경 장식 원들 */
+        .bg-circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: pulse-bg 4s ease-in-out infinite;
+        }
+        
+        .bg-circle-1 {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, #FFD700, transparent);
+            top: -100px;
+            left: -100px;
+            animation-delay: 0s;
+        }
+        
+        .bg-circle-2 {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, #667eea, transparent);
+            bottom: -150px;
+            right: -150px;
+            animation-delay: 1s;
+        }
+        
+        .bg-circle-3 {
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, #4facfe, transparent);
+            top: 50%;
+            right: 10%;
+            animation-delay: 2s;
+        }
+        
+        @keyframes pulse-bg {
+            0%, 100% { transform: scale(1); opacity: 0.1; }
+            50% { transform: scale(1.1); opacity: 0.15; }
+        }
+        
+        .crypto-icons {
+            position: absolute;
+            top: 8%;
+            right: 8%;
+            display: flex;
+            gap: 1.5vw;
+            z-index: 10;
+        }
+        
+        .crypto-icon {
+            width: 4.5vw;
+            height: 4.5vw;
+            max-width: 70px;
+            max-height: 70px;
+            min-width: 45px;
+            min-height: 45px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: float 3s ease-in-out infinite;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .crypto-icon svg {
+            width: 55%;
+            height: 55%;
+        }
+        
+        .crypto-icon:nth-child(1) svg {
+            width: 70%;
+            height: 70%;
+        }
+        
+        .crypto-icon:nth-child(2) svg {
+            width: 60%;
+            height: 60%;
+            transform: translateX(0);
+        }
+        
+        .crypto-icon:nth-child(1) {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            animation-delay: 0s;
+        }
+        
+        .crypto-icon:nth-child(2) {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            animation-delay: 0.5s;
+        }
+        
+        .crypto-icon:nth-child(3) {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            animation-delay: 1s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        .main-icon {
+            width: clamp(90px, 10vw, 140px);
+            height: clamp(90px, 10vw, 140px);
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: clamp(45px, 6vw, 70px);
+            margin-bottom: clamp(25px, 3.5vw, 45px);
+            box-shadow: 0 10px 50px rgba(255, 215, 0, 0.5);
+            animation: pulse 2s ease-in-out infinite;
+            position: relative;
+            z-index: 5;
+        }
+        
+        .main-icon::before {
+            content: '';
+            position: absolute;
+            width: 110%;
+            height: 110%;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            animation: ripple 2s ease-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 10px 50px rgba(255, 215, 0, 0.5); }
+            50% { transform: scale(1.05); box-shadow: 0 15px 70px rgba(255, 215, 0, 0.7); }
+        }
+        
+        @keyframes ripple {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.3); opacity: 0; }
+        }
+        
+        h1 {
+            font-size: clamp(30px, 4vw, 52px);
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: clamp(20px, 2vw, 25px);
+            line-height: 1.3;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 5;
+        }
+        
+        .highlight {
+            color: #FFD700;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+        
+        .subtitle {
+            font-size: clamp(20px, 2.3vw, 30px);
+            color: #FFD700;
+            text-align: center;
+            margin-bottom: clamp(35px, 4.5vw, 55px);
+            font-weight: 600;
+            padding: clamp(14px, 1.8vw, 22px) clamp(30px, 3.5vw, 45px);
+            background: rgba(255, 215, 0, 0.15);
+            border-radius: 50px;
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            box-shadow: 0 5px 25px rgba(255, 215, 0, 0.2);
+            position: relative;
+            z-index: 5;
+        }
+        
+        .description {
+            font-size: clamp(15px, 1.7vw, 22px);
+            color: rgba(255, 255, 255, 0.95);
+            text-align: center;
+            max-width: 90%;
+            padding: clamp(18px, 2.2vw, 28px) clamp(35px, 4.5vw, 55px);
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            border-left: 5px solid #FFD700;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 5;
+        }
+        
+        .description-subtitle {
+            font-size: clamp(13px, 1.3vw, 17px);
+            color: rgba(255, 215, 0, 0.8);
+            margin-top: clamp(10px, 1.2vw, 14px);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-wrapper">
+        <div class="bg-circle bg-circle-1"></div>
+        <div class="bg-circle bg-circle-2"></div>
+        <div class="bg-circle bg-circle-3"></div>
+        
+        <div class="slide-container">
+            <div class="crypto-icons">
+                <!-- Bitcoin -->
+                <div class="crypto-icon">
+                    <svg viewBox="0 0 32 32" fill="white">
+                        <path d="M23.189 14.02c.314-2.096-1.283-3.223-3.465-3.975l.708-2.84-1.728-.43-.69 2.765c-.454-.114-.92-.22-1.385-.326l.695-2.783L15.596 6l-.708 2.839c-.376-.086-.746-.17-1.104-.26l.002-.009-2.384-.595-.46 1.846s1.283.294 1.256.312c.7.175.826.638.805 1.006l-.806 3.235c.048.012.11.03.18.057l-.183-.045-1.13 4.532c-.086.212-.303.531-.793.41.018.025-1.256-.313-1.256-.313l-.858 1.978 2.25.561c.418.105.828.215 1.231.318l-.715 2.872 1.727.43.708-2.84c.472.127.93.245 1.378.357l-.706 2.828 1.728.43.715-2.866c2.948.558 5.164.333 6.097-2.333.752-2.146-.037-3.385-1.588-4.192 1.13-.26 1.98-1.003 2.207-2.538zm-3.95 5.538c-.533 2.147-4.148.986-5.32.695l.95-3.805c1.172.293 4.929.872 4.37 3.11zm.535-5.569c-.487 1.953-3.495.96-4.47.717l.86-3.45c.975.243 4.118.696 3.61 2.733z"/>
+                    </svg>
+                </div>
+                <!-- Solana -->
+                <div class="crypto-icon">
+                    <svg viewBox="0 0 397.7 311.7" fill="white">
+                        <path d="M64.6 237.9c2.4-2.4 5.7-3.8 9.2-3.8h317.4c5.8 0 8.7 7 4.6 11.1l-62.7 62.7c-2.4 2.4-5.7 3.8-9.2 3.8H6.5c-5.8 0-8.7-7-4.6-11.1z"/>
+                        <path d="M64.6 3.8C67.1 1.4 70.4 0 73.8 0h317.4c5.8 0 8.7 7 4.6 11.1l-62.7 62.7c-2.4 2.4-5.7 3.8-9.2 3.8H6.5c-5.8 0-8.7-7-4.6-11.1z"/>
+                        <path d="M333.1 120.1c-2.4-2.4-5.7-3.8-9.2-3.8H6.5c-5.8 0-8.7 7-4.6 11.1l62.7 62.7c2.4 2.4 5.7 3.8 9.2 3.8h317.4c5.8 0 8.7-7 4.6-11.1z"/>
+                    </svg>
+                </div>
+                <!-- Ethereum -->
+                <div class="crypto-icon">
+                    <svg viewBox="0 0 24 24" fill="white">
+                        <path d="M11.944 17.97L4.58 13.62 11.943 24l7.37-10.38-7.372 4.35h.003zM12.056 0L4.69 12.223l7.365 4.354 7.365-4.35L12.056 0z"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="main-icon">
+                🚀
+            </div>
+            
+            <h1>
+                Marketing Proposal for Global<br>
+                <span class="highlight">Cryptocurrency Projects</span> in Korea
+            </h1>
+            
+            <div class="subtitle">
+                Reach Higher with HighCrypto
+            </div>
+            
+            <div class="description">
+                Korea's Premier Cryptocurrency Marketing Agency
+                <div class="description-subtitle">
+                    HighCrypto - Your Gateway to Korean Crypto Market
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

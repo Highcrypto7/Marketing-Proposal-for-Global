@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Service Packages - HighCrypto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1c3b;
+            color: white;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .slide-wrapper {
+            width: 100%;
+            max-width: 1280px;
+            aspect-ratio: 16 / 9;
+            position: relative;
+        }
+        
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            padding: 4% 6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: clamp(25px, 3.2vw, 40px);
+        }
+        
+        h1 {
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: bold;
+            color: white;
+            margin-bottom: clamp(8px, 1vw, 12px);
+        }
+        
+        .header-line {
+            width: clamp(220px, 25vw, 300px);
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+            margin: 0 auto;
+        }
+        
+        .intro-box {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            border-radius: 15px;
+            padding: clamp(18px, 2.5vw, 30px);
+            margin-bottom: clamp(30px, 4vw, 50px);
+            text-align: center;
+        }
+        
+        .intro-text {
+            font-size: clamp(14px, 1.7vw, 20px);
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+        
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: clamp(18px, 2.5vw, 30px);
+        }
+        
+        .package-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: clamp(20px, 2.8vw, 35px);
+            text-align: center;
+            border-top: 4px solid #FFD700;
+            transition: all 0.3s ease;
+        }
+        
+        .package-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+        
+        .package-icon {
+            width: clamp(60px, 7vw, 80px);
+            height: clamp(60px, 7vw, 80px);
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: clamp(30px, 3.5vw, 40px);
+            margin: 0 auto clamp(15px, 2vw, 25px);
+        }
+        
+        .package-title {
+            font-size: clamp(18px, 2.2vw, 28px);
+            font-weight: 600;
+            color: #FFD700;
+            margin-bottom: clamp(8px, 1.1vw, 14px);
+        }
+        
+        .package-desc {
+            font-size: clamp(13px, 1.5vw, 18px);
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+        
+        .bottom-note {
+            text-align: center;
+            margin-top: clamp(25px, 3.5vw, 45px);
+            padding: clamp(15px, 2vw, 25px);
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 12px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+        
+        .bottom-text {
+            font-size: clamp(14px, 1.6vw, 20px);
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            color: #FFD700;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-wrapper">
+        <div class="slide-container">
+            <div class="header">
+                <h1>Customized Service Packages</h1>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="intro-box">
+                <div class="intro-text">
+                    HighCrypto provides flexible services tailored to each project's stage and goals. Services can be selected individually or combined for synergy.
+                </div>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-icon">📦</div>
+                    <div class="package-title">Core Services</div>
+                    <div class="package-desc">Essential marketing services: KOL, Naver, Community, Media packages with tiered options</div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-icon">⚡</div>
+                    <div class="package-title">Specialized Services</div>
+                    <div class="package-desc">Targeted advertising networks and reward app campaigns for specific objectives</div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-icon">🎯</div>
+                    <div class="package-title">Integrated Solutions</div>
+                    <div class="package-desc">Comprehensive packages combining multiple services for maximum synergy and Korean market success</div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-icon">🔧</div>
+                    <div class="package-title">Custom Configuration</div>
+                    <div class="package-desc">Flexible combinations based on project characteristics, budget, and specific Korean market goals</div>
+                </div>
+            </div>
+            
+            <div class="bottom-note">
+                <div class="bottom-text">
+                    <span class="highlight">Next slides</span> will detail pricing, features, and recommendations for each package category
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community & Media Packages - HighCrypto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1c3b;
+            color: white;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .slide-wrapper {
+            width: 100%;
+            max-width: 1280px;
+            aspect-ratio: 16 / 9;
+            position: relative;
+        }
+        
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            padding: 4% 6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: clamp(18px, 2.5vw, 30px);
+        }
+        
+        h1 {
+            font-size: clamp(28px, 3.5vw, 44px);
+            font-weight: bold;
+            color: white;
+            margin-bottom: clamp(8px, 1vw, 12px);
+        }
+        
+        .header-line {
+            width: clamp(200px, 23vw, 280px);
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+            margin: 0 auto;
+        }
+        
+        .packages-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: clamp(15px, 2vw, 25px);
+        }
+        
+        .package-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: clamp(15px, 2vw, 25px);
+            border-top: 4px solid #FFD700;
+        }
+        
+        .package-title {
+            font-size: clamp(18px, 2.2vw, 28px);
+            font-weight: 600;
+            color: #FFD700;
+            margin-bottom: clamp(12px, 1.6vw, 20px);
+            text-align: center;
+        }
+        
+        .tiers {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(10px, 1.3vw, 16px);
+        }
+        
+        .tier-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid #FFD700;
+            border-radius: 8px;
+            padding: clamp(10px, 1.4vw, 17px);
+        }
+        
+        .tier-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: clamp(6px, 0.8vw, 10px);
+        }
+        
+        .tier-name {
+            font-size: clamp(14px, 1.7vw, 20px);
+            font-weight: 600;
+            color: #FFD700;
+        }
+        
+        .tier-price {
+            font-size: clamp(13px, 1.5vw, 18px);
+            font-weight: 600;
+            color: white;
+        }
+        
+        .tier-features {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(4px, 0.6vw, 7px);
+        }
+        
+        .feature {
+            font-size: clamp(11px, 1.3vw, 16px);
+            color: rgba(255, 255, 255, 0.75);
+            padding-left: clamp(12px, 1.5vw, 18px);
+            position: relative;
+            line-height: 1.4;
+        }
+        
+        .feature:before {
+            content: "•";
+            color: #FFD700;
+            position: absolute;
+            left: 0;
+        }
+        
+        .advantage-box {
+            margin-top: clamp(10px, 1.4vw, 17px);
+            padding: clamp(8px, 1.1vw, 14px);
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 6px;
+            font-size: clamp(10px, 1.2vw, 15px);
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.5;
+            text-align: center;
+        }
+        
+        .highlight {
+            color: #FFD700;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-wrapper">
+        <div class="slide-container">
+            <div class="header">
+                <h1>Core Services: Community & Media Packages</h1>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-section">
+                    <div class="package-title">Community Ecosystem Building</div>
+                    
+                    <div class="tiers">
+                        <div class="tier-card">
+                            <div class="tier-header">
+                                <div class="tier-name">Starter</div>
+                                <div class="tier-price">$2,500/mo</div>
+                            </div>
+                            <div class="tier-features">
+                                <div class="feature">DC Gallery opening + 10-15 posts/day</div>
+                                <div class="feature">30 viral posts</div>
+                                <div class="feature">10 Naver Cafe posts</div>
+                                <div class="feature">1 trending post guarantee (Coinpan)</div>
+                            </div>
+                        </div>
+                        
+                        <div class="tier-card">
+                            <div class="tier-header">
+                                <div class="tier-name">Growth</div>
+                                <div class="tier-price">$7,000/mo</div>
+                            </div>
+                            <div class="tier-features">
+                                <div class="feature">25-30 posts/day + comment activity</div>
+                                <div class="feature">80 viral posts, 25 Naver Cafe posts</div>
+                                <div class="feature">3 trending posts (multi-platform)</div>
+                                <div class="feature">1 community event/month</div>
+                            </div>
+                        </div>
+                        
+                        <div class="tier-card">
+                            <div class="tier-header">
+                                <div class="tier-name">Dominance</div>
+                                <div class="tier-price">$13,000/mo</div>
+                            </div>
+                            <div class="tier-features">
+                                <div class="feature">45-50 posts/day + intensive management</div>
+                                <div class="feature">150 viral posts, 50 Naver Cafe posts</div>
+                                <div class="feature">6 trending posts (all platforms)</div>
+                                <div class="feature">2 community events/month</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="advantage-box">
+                        <span class="highlight">Strategic Value:</span> DC Gallery proves community activity for exchange listing reviews
+                    </div>
+                </div>
+                
+                <div class="package-section">
+                    <div class="package-title">Media & PR Package</div>
+                    
+                    <div class="tiers">
+                        <div class="tier-card">
+                            <div class="tier-header">
+                                <div class="tier-name">Essential</div>
+                                <div class="tier-price">$3,000/mo</div>
+                            </div>
+                            <div class="tier-features">
+                                <div class="feature">10 general media articles</div>
+                                <div class="feature">2 CoinReaders articles</div>
+                                <div class="feature">All guaranteed Naver News exposure</div>
+                                <div class="feature">Unlimited press release translation</div>
+                            </div>
+                        </div>
+                        
+                        <div class="tier-card">
+                            <div class="tier-header">
+                                <div class="tier-name">Impact</div>
+                                <div class="tier-price">$10,000/mo</div>
+                            </div>
+                            <div class="tier-features">
+                                <div class="feature">15 general + 5 CoinReaders</div>
+                                <div class="feature">3 Coinness (API partner network)</div>
+                                <div class="feature">1 TokenPost</div>
+                                <div class="feature">Unlimited PR translation & production</div>
+                            </div>
+                        </div>
+                        
+                        <div class="tier-card">
+                            <div class="tier-header">
+                                <div class="tier-name">Dominant</div>
+                                <div class="tier-price">$22,000/mo</div>
+                            </div>
+                            <div class="tier-features">
+                                <div class="feature">20 general + 10 CoinReaders</div>
+                                <div class="feature">6 Coinness (extensive API distribution)</div>
+                                <div class="feature">3 TokenPost + real-time search strategy</div>
+                                <div class="feature">Unlimited PR + strategy consulting</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="advantage-box">
+                        <span class="highlight">Naver Exposure:</span> General media, CoinReaders, and TokenPost guaranteed Naver News publication. Coinness provides extensive API distribution to partner platforms.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

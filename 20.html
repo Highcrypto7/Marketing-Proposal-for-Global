@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information - HighCrypto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1c3b;
+            color: white;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .slide-wrapper {
+            width: 100%;
+            max-width: 1280px;
+            aspect-ratio: 16 / 9;
+            position: relative;
+            background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+        }
+        
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            padding: 5% 6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo-section {
+            margin-bottom: clamp(30px, 4vw, 50px);
+            text-align: center;
+        }
+        
+        .logo-icon {
+            width: clamp(80px, 10vw, 120px);
+            height: clamp(80px, 10vw, 120px);
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: clamp(40px, 5vw, 60px);
+            margin: 0 auto clamp(20px, 2.5vw, 30px);
+            box-shadow: 0 10px 40px rgba(255, 215, 0, 0.4);
+        }
+        
+        .company-name {
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: bold;
+            color: #FFD700;
+            margin-bottom: clamp(8px, 1vw, 12px);
+        }
+        
+        .tagline {
+            font-size: clamp(16px, 1.9vw, 24px);
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(20px, 2.5vw, 30px);
+            width: 100%;
+            max-width: 900px;
+            margin-bottom: clamp(30px, 4vw, 50px);
+        }
+        
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: clamp(20px, 2.8vw, 35px);
+            text-align: center;
+            border-top: 3px solid #FFD700;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+        
+        .contact-icon {
+            width: clamp(50px, 6vw, 70px);
+            height: clamp(50px, 6vw, 70px);
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: clamp(24px, 3vw, 35px);
+            margin: 0 auto clamp(12px, 1.6vw, 20px);
+        }
+        
+        .contact-label {
+            font-size: clamp(13px, 1.5vw, 18px);
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: clamp(6px, 0.8vw, 10px);
+        }
+        
+        .contact-value {
+            font-size: clamp(15px, 1.8vw, 22px);
+            font-weight: 600;
+            color: white;
+            word-break: break-word;
+        }
+        
+        .contact-value a {
+            color: #FFD700;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-value a:hover {
+            color: #FFA500;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            border-radius: 15px;
+            padding: clamp(18px, 2.5vw, 30px);
+            text-align: center;
+            max-width: 700px;
+        }
+        
+        .cta-text {
+            font-size: clamp(14px, 1.6vw, 20px);
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+            margin-bottom: clamp(10px, 1.4vw, 17px);
+        }
+        
+        .cta-subtext {
+            font-size: clamp(12px, 1.4vw, 17px);
+            color: rgba(255, 215, 0, 0.9);
+            font-weight: 600;
+        }
+        
+        .footer-text {
+            margin-top: clamp(20px, 2.8vw, 35px);
+            font-size: clamp(12px, 1.4vw, 17px);
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-wrapper">
+        <div class="slide-container">
+            <div class="logo-section">
+                <div class="logo-icon">🚀</div>
+                <div class="company-name">HighCrypto</div>
+                <div class="tagline">Korea's Premier Cryptocurrency Marketing Agency</div>
+            </div>
+            
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">🌐</div>
+                    <div class="contact-label">Website</div>
+                    <div class="contact-value">
+                        <a href="https://highcrypto.io/" target="_blank">highcrypto.io</a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon"✉️</div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">
+                        <a href="mailto:Jay@highcrypto.io">Jay@highcrypto.io</a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <div class="contact-label">Telegram</div>
+                    <div class="contact-value">@highcrypto7</div>
+                </div>
+            </div>
+            
+            <div class="cta-box">
+                <div class="cta-text">
+                    For more detailed consultation about Korean market entry strategy, please contact us
+                </div>
+                <div class="cta-subtext">
+                    1:1 consultation via Telegram or Google Meet is also available
+                </div>
+            </div>
+            
+            <div class="footer-text">
+                HighCrypto - The Best Partner for Global Projects Entering the Korean Market
+            </div>
+        </div>
+    </div>
+</body>
+</html>
